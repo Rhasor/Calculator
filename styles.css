@@ -5,15 +5,29 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
   }
-  
+  .cero {
+    grid-column: span 2; /* Make the zero button span three columns */
+  }
+
+  .clear {
+    grid-column: span 2; /* span 2 columns */
+  }
+
   button {
     padding: 15px;
     font-size: 1em;
-    background-color: #e0e0e0;
+    background-color: #00FA9A;
     border: 1px solid #ccc;
     cursor: pointer;
   }
-
+  .operators,
+  .clear {
+    padding: 15px;
+    font-size: 1em;
+    background-color: #32CD32;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
   .display {
     grid-column: span 4;
     background-color: #f2f2f2;
