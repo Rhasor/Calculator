@@ -1,40 +1,52 @@
-.calculator {
-    width: 300px;
-    margin: 50px auto;
+body {
+  background-image: url(https://media.istockphoto.com/id/1302045563/vector/green-technology-background.jpg?s=612x612&w=0&k=20&c=pkcEeppZO_JPDMQH5vTb4PXoOZzDOIXHxg9CV3pawJI=);
+  background-size: cover;
+}
+
+.calculator-grid-container {
+    width: 280px;
+    margin: 90px auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
   }
-  .cero {
-    grid-column: span 2; /* Make the zero button span three columns */
-  }
 
-  .clear {
-    grid-column: span 2; /* span 2 columns */
+  .output-container {
+    grid-column: span 4;
+    background-color: #d7ffda;
+    padding: 0px;
+    text-align: right;
+    font-size: 1.5em;
+  }
+    .previous-operand,
+    .current-operand {
+      height: 50px;
+      padding: 0px 30px;
+    }
+
+  .ac {
+    grid-column: span 2;
   }
 
   button {
     padding: 15px;
     font-size: 1em;
-    background-color: #00FA9A;
+    background-color: #d5fbd5;
     border: 1px solid #ccc;
     cursor: pointer;
   }
-  .operators,
-  .clear {
+
+  .operation,
+  .ac,
+  .del,
+  .span-two {
     padding: 15px;
     font-size: 1em;
-    background-color: #32CD32;
+    background-color: #e5efe5;
     border: 1px solid #ccc;
     cursor: pointer;
   }
-  .display {
-    grid-column: span 4;
-    background-color: #f2f2f2;
-    padding: 10px;
-    text-align: right;
-    font-size: 1.5em;
-  }
+
   
   button:hover {
     background-color: #d1d1d1;

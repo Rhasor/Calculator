@@ -8,26 +8,32 @@
 </head>
 <body>
     <div class="calculator">
-        <div class="display" id="display">0</div>
-        <button class="clear" onclick="clearDisplay()">C</button>
-        <button class="operators" onclick="backspace()">←</button>
-        <button class="operators" onclick="operate('/')">/</button>
-        <button onclick="populateDisplay('7')">7</button>
-        <button onclick="populateDisplay('8')">8</button>
-        <button onclick="populateDisplay('9')">9</button>
-        <button class="operators" onclick="operate('*')">*</button>
-        <button onclick="populateDisplay('4')">4</button>
-        <button onclick="populateDisplay('5')">5</button>
-        <button onclick="populateDisplay('6')">6</button>
-        <button class="operators" onclick="operate('-')">-</button>
-        <button onclick="populateDisplay('1')">1</button>
-        <button onclick="populateDisplay('2')">2</button>
-        <button onclick="populateDisplay('3')">3</button>
-        <button class="operators" onclick="operate('+')">+</button>
-        <button class="cero" onclick="populateDisplay('0')">0</button>
-        <button onclick="inputDecimal()">.</button>
-        <button class="operators" onclick="equals()">=</button>
-      </div>
+        <div class="calculator-grid-container">
+            <div class="output-container">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+            </div>
+            <button data-all-clear class="ac">AC</button>
+            <button data-delete class="del">DEL</button>
+            <button data-operation class="operation">%</button>
+            <button data-operation class="operation">+</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operation class="operation">x</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operation class="operation">÷</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operation class="operation">-</button>
+            <button data-number>0</button>
+            <button data-number>.</button>
+            <button data-equals class="span-two equals">=</button>
+        </div>
+       </div>
       <script src="calculator.js"></script>
 </body>
 </html>
